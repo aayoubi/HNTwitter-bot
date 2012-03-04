@@ -1,17 +1,15 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 import requests
 import simplejson
+
+import datetime
 
 def get_url():
 	'''
 	retrieves all posts from news.ycombinator.com in json format
 	'''
 	url='http://api.ihackernews.com/page'
-	auth=''
-	r = requests.get(url, auth=auth)
-	print r.status_code
+	r = requests.get(url)
+	print "Status: %d, %s" % (r.status_code, str(datetime.datetime.now()))
 	return r.status_code, r.content
 
 def parse_json(content):
@@ -27,7 +25,7 @@ def get_last_post():
 	returns last post on news.ycombinator.com
 	'''
 	status, content = get_url()
-	if status==200: 
+	if status == 200: 
 		posts=parse_json(content)
 		return posts[0]
 	return None
