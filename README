@@ -1,0 +1,13 @@
+Hacker News bot
+
+What does it do?
+
+Retrieve latest post from http://api.ihackernews.com/page
+Post to twitter account @hacker_bot
+
+How to use?
+./starter.py && ./bot.py
+
+Author:
+Ali Ayoubi
+aloush89@gmail.com
