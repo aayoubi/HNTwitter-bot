@@ -1,13 +1,8 @@
 Hacker News bot
 
 What does it do?
-
 Retrieve latest posts from http://api.ihackernews.com/page
 Post updates to twitter @hacker_bot
 
-How to use?
-./starter.py && ./bot.py
-
 Author:
-Ali Ayoubi
 aloush89@gmail.com
