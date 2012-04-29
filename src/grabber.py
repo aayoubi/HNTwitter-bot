@@ -30,4 +30,14 @@ def get_last_post():
 		return posts[0]
 	return None
 
+def get_last_ten_posts():
+	'''
+	retrieves last ten posts from news.ycombinator.com
+	'''
+	status, content = get_url()
+	if status == 200:
+		posts=parse_json(content)
+		return posts[:10]
+	return None
+
 
