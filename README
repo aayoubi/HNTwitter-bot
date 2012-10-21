@@ -3,15 +3,5 @@ Hacker News Bot
 ===============
 
 What does it do?
-- Retrieve latest posts from http://api.ihackernews.com/page
-- Post updates to twitter @hacker_bot
-
-	#!/usr/bin/env python
-
-	RUNLOG="run.$$.log"
-	./warmup.py >> ${RUNLOG}
-	while true; do
-	  ./hnbot.py >> ${RUNLOG}
-	  sleep 600
-	done
-
+- Retrieves latest posts from http://api.ihackernews.com/page
+- Posts updates to a twitter account
