@@ -1,11 +1,10 @@
-#!/usr/bin/eval PYTHONPATH=/home/lma21/python-modules/ python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import unittest
 
 import sys
 import os
-sys.path.insert(0, os.path.abspath('..'))
 import hnbot
 
 class HnbotMessage(unittest.TestCase):
